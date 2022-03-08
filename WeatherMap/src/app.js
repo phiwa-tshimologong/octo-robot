@@ -1,6 +1,6 @@
 'use strict';
 
-Const clock = document.getElementById('clock');
+const clock = document.getElementById('clock');
 
 setInterval(() => {
   const currentTime = new Date().toLocaleTimeString([], { hour12: false });
@@ -10,7 +10,7 @@ setInterval(() => {
 
 const currentLocation = document.getElementById('currentLocation');
 const showIcon = document.getElementById('showIcon');
-const currentTemp = document.getElementById('curTemp');
+const currentTemp = document.getElementById('currentTemp');
 const feelsLike = document.getElementById('feelsLike');
 const description = document.getElementById('description');
 const hourlyForecast = document.getElementById('hourlyForecast');
