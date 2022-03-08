@@ -132,8 +132,9 @@ nav{
 	border-bottom: 10px solid #0B2343;
 }
 .brand-pillars div h2{
+	font-family: 'Source Sans Pro';
 	margin-bottom: 0.8rem;
-	font-weight: 400;
+	color: #0B2343;
 }
 
 
