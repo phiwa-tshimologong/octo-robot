@@ -26,6 +26,10 @@ html {
 }
 
 /* header */
+header{
+	background: url('/img/animated-header-image.svg');
+	height: 100vh;
+}
 .navbar{
 	display: flex;
 	justify-content: space-between;
@@ -33,9 +37,7 @@ html {
 nav{
 	background-color: #0B2343;
 }
-.logo{
-	/* display: flex; */
-}
+
 .logo img{
 	height: 3rem;
 	width: auto;
