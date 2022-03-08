@@ -137,6 +137,25 @@ nav{
 	color: #0B2343;
 }
 
+.break-content{
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	display: flex;
+}
+.break-content div {
+	margin-left: 2.5rem;
+}
+.break-content img{
+	box-shadow: 3px 4px 9px -1px rgba(94,94,94,0.75);
+	-webkit-box-shadow: 3px 4px 9px -1px rgba(94,94,94,0.75);
+	-moz-box-shadow: 3px 4px 9px -1px rgba(94,94,94,0.75);
+	border-radius: 0.5rem;
+}
+.break-content div h2{
+	font-size: 2.5rem;
+	color: #0B2343;
+}
+
 
 
 
