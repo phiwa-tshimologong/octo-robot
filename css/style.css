@@ -200,7 +200,7 @@ nav{
 	font-size: 2rem;
 	text-align: center;
 	color: #fff;
-	width: 340px;
+
 }
 
 .project-container div p{
@@ -223,6 +223,25 @@ nav{
 	background-color: #ffffff00;
 	color: #ffcc05;
 }
-
+.location{
+	margin: 3rem 0;
+	display: flex;
+}
+.location iframe{
+	width: 60%;
+}
+.location div {
+	margin-left: 2rem;
+}
+.location div p{
+	font-size: 1.5rem;
+	color: #0B2343;
+	margin-bottom: 1rem;
+}
+.location div p i{
+	font-size: 1.6rem;
+	margin-right: 1rem;
+	transform: scale(1.2);
+}
 
 
