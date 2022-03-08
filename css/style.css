@@ -51,6 +51,7 @@ nav{
 	color: #fff;
 	text-decoration: none;
 	padding: 1.25rem;
+	font-weight: 600;
 	/* background-color: blueviolet; */
 	transition: 0.3s ease-in-out;
 }
@@ -64,12 +65,49 @@ nav{
 	height: 100%;
 
 }
-
 /* ___________________ */
 
 
+/* main */
+.brand-pillars{
+	display: grid;
+	grid-template-columns: auto auto auto auto
+}
+.brand-pillars div{
+	padding: 2rem 0.8rem;
+	text-align: center;
+	cursor: pointer;
+	/* transition: 0.2s ease-in-out; */
+}
 
-
+.brand-pillars div:nth-child(1){
+	background-color: #ffcd0583;
+	border-bottom: 10px solid #ffffff00;
+	transition: 0.2s ease-in-out;
+}
+.brand-pillars div:nth-child(2){
+	background-color: #ffcd055d;
+	border-bottom: 10px solid #ffffff00;
+	transition: 0.3s ease-in-out;
+}
+.brand-pillars div:nth-child(3){
+	background-color: #ffcd0548;
+	border-bottom: 10px solid #ffffff00;
+	transition: 0.4s ease-in-out;
+}
+.brand-pillars div:nth-child(4){
+	background-color: #ffcd0536;
+	border-bottom: 10px solid #ffffff00;
+	transition: 0.5s ease-in-out;
+	
+}
+.brand-pillars div:hover{
+	border-bottom: 10px solid #0B2343;
+}
+.brand-pillars div h2{
+	margin-bottom: 0.8rem;
+	font-weight: 400;
+}
 
 
 
