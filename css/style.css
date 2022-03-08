@@ -244,4 +244,19 @@ nav{
 	transform: scale(1.2);
 }
 
-
+/* footer */
+footer{
+	display: flex;
+	background-color: #031429;
+	vertical-align: middle;
+	justify-content: space-between;
+	border-top: #0B2343 1.5rem solid;	
+}
+footer img{
+	width: 60px;
+	padding: 10px 0;
+}
+footer p{
+	color: #fff;
+	margin-top: 2rem;
+}
