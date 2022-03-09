@@ -7,7 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-	<link href="css/form.css" rel="stylesheet">
+	<link href="css/forms.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,19 +20,19 @@
 
 			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="post">
 				
-				<input type="hidden" name="send_to" value="barbara.engle@outlook.com">
+				<input type="hidden" name="send_to" value="castormmahlatse@gmail.com">
 
 				<fieldset>
 					<legend>Your contact information</legend>
 
 					<label for="yourName">Your name</label>
-					<input type="text" id="yourname" name="yourname">
+					<input type="text" id="yourname" name="yourname" required>
 
 					<label for="phone">Phone number</label>
-					<input type="tel" id="phone" name="phone" placeholder="(xxx) xxx xxxx">
+					<input type="tel" id="phone" name="phone" placeholder="(xxx) xxx xxxx" required>
 
 					<label for="email">Email</label>
-					<input type="email" id="email" name="email">
+					<input type="email" id="email" name="email" required>
 				</fieldset>
 
 				<fieldset>
@@ -40,10 +40,10 @@
 					<legend>About your abduction </legend>
 
 					<label for="requestedDate">Requested date</label>
-					<input type="date" id="requesteddate" name="requesteddate">
+					<input type="date" id="requesteddate" name="requesteddate" required>
 
 					<label for="peopleNo">How many people would you like abducted?</label>
-					<input type="number" id="peopleno" min="1" max="10" name="peopleno">
+					<input type="number" id="peopleno" min="1" max="10" name="peopleno" required>
 
 					<label for="ufotype">What type of UFO do you prefer?</label>
 					<label>
@@ -67,7 +67,7 @@
 					</label>
 
 					<label for="experiencetype">What type of abduction experience do you want?</label>
-					<select id="experiencetype" name="experiencetype">
+					<select id="experiencetype" name="experiencetype" required>
 						<option selected>Select an experience.....</option>
 						<option value="tour">Tour of the solar system</option>
 						<option value="dinner">Alien dinner and discussion</option>
