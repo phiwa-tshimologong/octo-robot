@@ -48,7 +48,7 @@ const fetchData = (url) => {
   fetch(url)
     .then(res => res.json())
     .then(data => {
-      console.log(data);
+  
       handleWeather(data);
     })
     .catch(e => console.log(`Fetch Data Error: ${e}`));
