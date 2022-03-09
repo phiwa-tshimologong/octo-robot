@@ -1,5 +1,5 @@
 // ------------------------------------Declarators-------------------------------------------------------//
-const todoInput = document.querySelector('.to-do-input');
+let todoInput = document.querySelector('.to-do-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
 const filterOption = document.querySelector('.filter-todo');
@@ -15,14 +15,23 @@ function addTodo(event){
   
     // prevent from submitting
     event.preventDefault();
-    CreateElement(todoInput.value);
-    //add todo to local storage
-    saveLocalTodos(todoInput.value);
 
+
+    // Reject empty submissions
+    if(todoInput.value === '' || todoInput.value === null){
+
+    }else{
+
+        CreateElement(todoInput.value);
+        console.log(todoInput.value);
+        //add todo to local storage
+        saveLocalTodos(todoInput.value);
     
-    //clear todo input value;
-
-    todoInput.value = "";
+        
+        //clear todo input value;
+    
+        todoInput.value = "";
+    }
 }
 // ----------------------------------------------------Create Elements ----------------------------------------------------------------- //
 
