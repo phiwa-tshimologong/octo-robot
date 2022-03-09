@@ -29,6 +29,7 @@ const storeLocation = (pos) => {
   //console.log(`lat ${lat} \nlon ${lon}`);
   // eslint-disable-next-line no-undef
   const tempUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=minutely&appid=${API_KEY}`;
+  
   // eslint-disable-next-line no-undef
   const locationUrl = `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${long}&limit=5&appid=${API_KEY}`;
   fetchData(tempUrl);
@@ -48,10 +49,10 @@ const fetchData = (url) => {
   fetch(url)
     .then(res => res.json())
     .then(data => {
-      console.log(data);
+  
       handleWeather(data);
     })
-    .catch(e => console.log(`Fetch Data Error: ${e}`));
+    .catch(e => console.log(`Fetch Data Error: ${e.message}`));
 };
 
 const handleWeather = (data) => {
