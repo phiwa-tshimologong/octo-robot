@@ -35,9 +35,22 @@ header{
 	justify-content: space-between;
 }
 nav{
-	background-color: #0B234300;
+
 	position: fixed;
 	width: 100%;
+}
+.nav-background{
+	background-color: #0B2343;
+	box-shadow: 1px 3px 8px 0px rgba(11,35,66,0.48);
+	-webkit-box-shadow: 1px 3px 8px 0px rgba(11,35,66,0.48);
+	-moz-box-shadow: 1px 3px 8px 0px rgba(11,35,66,0.48);
+	transition: 0.2s ease-in-out;
+
+}
+.nav-transparent{
+	background-color: #ffffff00;
+	
+	transition: 0.2s ease-in-out;
 }
 
 .logo img{
@@ -59,7 +72,7 @@ nav{
 }
 .links ul li a:hover{
 	background-color: #ffcc05;
-	color: #0B2343;
+	color: #0b2342;
 }
 
 .links ul{
