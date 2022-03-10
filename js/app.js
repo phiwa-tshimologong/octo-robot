@@ -13,9 +13,3 @@ if(window.location.pathname === '/index.html'){
 }else{
     nav.classList.remove('nav-background');
 }
-
-
-
-// window.onscroll = () => {
-//     console.log(window);
-// }
