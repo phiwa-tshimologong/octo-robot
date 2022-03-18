@@ -21,6 +21,11 @@ function sendData() {
       encodeURIComponent(form.querySelector("[name='send_to']").value)
   );
   urlEncodedDataPairs.push(
+    encodeURIComponent("send_to") +
+      "=" +
+      encodeURIComponent(form.querySelector("[name='coffee']").value)
+  );
+  urlEncodedDataPairs.push(
     encodeURIComponent("email") +
       "=" +
       encodeURIComponent(form.querySelector("[name='email']").value)
@@ -66,7 +71,7 @@ function sendData() {
   urlEncodedDataPairs.push(
     encodeURIComponent("subscribe") +
       "=" +
-      encodeURIComponent(form.querySelector("[name='specialrequest']").checked)
+      encodeURIComponent(form.querySelector("[name='subscribe']").checked)
   );
 
   // Combine the pairs into a single string and replace all %-encoded spaces to
